@@ -4,7 +4,7 @@
 
 A modern React web app for CSE/IT students preparing for campus placements. Everything you need in one place: DSA practice, company-wise prep, HR question answers, and resume tips.
 
-🔗 **Live Site:** [https://pawan-cs2025.github.io/placeready](https://pawan-cs2025.github.io/placeready)
+🔗 **Live Site:** [https://pawanvighnesh.github.io/placeready](https://pawanvighnesh.github.io/placeready)
 
 ---
 
@@ -88,7 +88,7 @@ placeready/
 
 **Pawan** — CSE Student, Chennai Institute of Technology (2025–2029)
 
-- GitHub: [@pawan-cs2025](https://github.com/pawan-cs2025)
+- GitHub:[@pawanvighnesh](https://github.com/pawanvighnesh)
 - LinkedIn: [linkedin.com/in/pawan](https://linkedin.com/in/pawan)
 
 ---
