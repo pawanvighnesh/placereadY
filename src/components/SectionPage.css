@@ -1,0 +1,446 @@
+.section-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem 5rem;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--blue-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -1px;
+  margin-bottom: 0.75rem;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* DSA Topics */
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.topic-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.topic-card.open {
+  border-color: var(--accent);
+}
+
+.topic-header {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: background 0.15s;
+}
+
+.topic-header:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.topic-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topic-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.topic-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: left;
+}
+
+.topic-difficulty {
+  font-size: 0.75rem;
+  color: var(--muted);
+  display: block;
+  margin-top: 0.15rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.topic-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.topic-count {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+}
+
+.topic-chevron {
+  font-size: 0.7rem;
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+
+.question-list {
+  border-top: 1px solid var(--navy-border);
+  padding: 0.5rem 0;
+}
+
+.question-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
+  transition: background 0.15s;
+}
+
+.question-item:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.q-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.q-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 24px;
+  margin-top: 2px;
+}
+
+.q-text {
+  font-size: 0.9rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.q-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
+.q-difficulty {
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.q-company {
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+  text-align: right;
+}
+
+/* Company cards */
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.25rem;
+}
+
+.company-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+
+.company-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.company-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  background: rgba(255,255,255,0.06);
+  flex-shrink: 0;
+}
+
+.company-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.company-type {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.company-rounds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.round-tag {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--navy-border);
+  color: var(--muted);
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.company-tips {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.company-tips li {
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.company-tips li::before {
+  content: '→';
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* HR Section */
+.hr-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hr-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.hr-card:hover {
+  border-color: var(--accent, var(--blue));
+}
+
+.hr-question {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.hr-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.hr-answer {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.75;
+  border-left: 2px solid var(--accent, var(--blue));
+  padding-left: 1rem;
+}
+
+/* Resume Section */
+.resume-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.resume-tip-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.resume-tip-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.rtc-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.rtc-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.rtc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.rtc-list li {
+  font-size: 0.83rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.rtc-list li::before {
+  content: '✓';
+  color: var(--green);
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.resume-dos-donts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.dos-card, .donts-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.dos-card { border-top: 2px solid var(--green); }
+.donts-card { border-top: 2px solid var(--red); }
+
+.dos-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.donts-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.dos-list, .donts-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dos-list li, .donts-list li {
+  font-size: 0.83rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.dos-list li::before {
+  content: '✓';
+  color: var(--green);
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.donts-list li::before {
+  content: '✗';
+  color: var(--red);
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .section-page { padding: 2.5rem 1.25rem 3rem; }
+  .company-grid { grid-template-columns: 1fr; }
+  .resume-tips-grid { grid-template-columns: 1fr; }
+  .resume-dos-donts { grid-template-columns: 1fr; }
+  .question-item { flex-direction: column; align-items: flex-start; }
+  .q-right { align-items: flex-start; flex-direction: row; gap: 0.75rem; }
+  .topic-right { flex-direction: column; align-items: flex-end; gap: 0.25rem; }
+}
