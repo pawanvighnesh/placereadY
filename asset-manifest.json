@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/placeready/static/css/main.79f5bdb9.css",
+    "main.js": "/placeready/static/js/main.41107bc9.js",
+    "index.html": "/placeready/index.html",
+    "main.79f5bdb9.css.map": "/placeready/static/css/main.79f5bdb9.css.map",
+    "main.41107bc9.js.map": "/placeready/static/js/main.41107bc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79f5bdb9.css",
+    "static/js/main.41107bc9.js"
+  ]
+}
