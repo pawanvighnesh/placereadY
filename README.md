@@ -4,7 +4,7 @@
 
 A modern React web app for CSE/IT students preparing for campus placements. Everything you need in one place: DSA practice, company-wise prep, HR question answers, and resume tips.
 
-🔗 **Live Site:** [https://pawanvighnesh.github.io/placeready](https://pawanvighnesh.github.io/placeready)
+🔗 **Live Site:** [https://pawanvighnesh.github.io/placereadY](https://pawanvighnesh.github.io/placereadY)
 
 ---
 
